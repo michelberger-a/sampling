@@ -16,29 +16,43 @@ Select one of the scenarios below and design a survey to meet the need(s) outlin
 
 # Your Changes
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `2. Election`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of the survey is to determine what the target population wants from our political party. This can be related to social issues and the political platform. We want to know what ideas are valued by potentials voters. 
+We want to implement those values into the current platform and speaking points to convince voters, our party is the better choice. 
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target Population: All Canadian citizens  
+Sampling Frame: All Canadian citizens, 18 years and older, and voting eligible
+Sampling Units: Strata which would be divided up by province, gender/sex, ethnicity/race, age cohort of 10 years, income cohorts
+Observational Units: Eligible Canadian voters
+
+The sampling strategy I would implement is a stratified sample. Given we are working at the federal level of politics, we likely have access to lots ofdemographic data on potential votes.  
+It would be important to consider many strata because of the diverse Canadian population and vast size, which may affect needs based on voter location.  
+My strata would include province, gender/sex, ethnicity/race, age cohort of 10 years, and pre-defined Stats Canada income quintiles.
+Province would be important as certain areas arouund the country would likely have different desires. 
+As seen recently in the US election, the combination of gender/sex, ethnicity/race and age can tell a story of who is voting for what party. Correctly sampling these three strata would be extremely important to understanding what votes are looking for in a political party and platform.  
+Income is the last strata I would include. Based on high, low or middle income classes, needs of potential votes may change. This may be in relation to public benefits, public infrastructure, social services, tax uses and other common issues. Again, this will be important to understanding voter wants.  
+As there are many strata involved, this multi-stage could become quite complex. Because of this, simple random samples would occur over telephone or digital contact, as door-to-door sampling would be costly and time consuming.   
+The stratified sampling is used to capture the wide diverse issues across Canadian voters. 
+
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
+1. What is your province of residence/voting?
+2. What is your identified gender?
+3. What is your identified ethnicity?
+4. What is your age?
+5. What is your approximate yearly income?
+6. What is your primary voter issue in the upcoming election and why? i.e. environment because I want better green energy initiatives
+7. What is one current government policy, bill, program or initiative that could be improved?
+8. Can you rank in order, the top 3 federal political parties you would vote for? (1 = most likely to vote for of the top 3, 3 = least likely to vote for of the top 3)
+9. What is one aspect you dislike about the oopposing political party?
 10. write your question here... (optional)
 ```
 
