@@ -10,11 +10,35 @@ Modify the number of repetitions in the simulation to 1000 (from the original 50
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Alexander Michelberger
 
 ```
 Please write your explanation here...
 
+1)
+The first instance of sampling in the procedure is on line 47. The command is np.random.choice. Here we are using the people index, essentially each of the 1000 people can be identified by 1 number. From this list of index values, 10% are randomly selected (not clustered, stratified or systematic) as being infected. This is denoted with attack rate = 0.10 times the length of the list of the ppl dataframe. It is important to mention, there is no replacement, understanding, once somebody is infected they should not be re-considered for infection again, and to match the article assumption that everyone has a 10% chance of being infected. This will create a sample size of 100 infected people. Here the sampling frame are those in the community that have attended 1 of the 2 weddings or 80 brunches within the specified time frame. With regards to the blog post, this refers to the line under the table. It is the rephrase of 10% sampled per event to 10% probability of the entire community. THis is why in the code, ATTACK_RATE is multiplied to the entire dataframe, rather than a preset stratification by a group.  
+
+2) The second instance of sampling is on line 51. The command is np.random.rand and is used to mark the primary contact tracing. Here, the infected participants are selected for the sample. Although we still have access to the population of the community, the sampling frame is all people that were infected, since we only chose infected individuals with the code. This relates to the text under the second graph. It is mentioned infection tracing is only 20% of finding the source event, hence we have TRACE_SUCCESS set to 0.20. If we were to look into the data, about 20% of the infected individuals will have traced = True. The rest of the infected individuals, it will say False. Individuals not infected will have null. The number of True for traced should be about 20%, but can very, similar to the distribution of the first graph, which shows proportions of weddings ranging around 0.20. 
+
+3) The last instance of sampling is on line 55. This comes from the event_trace_counts >= SECONDARY_TRACE_THRESHOLD. This is the secondary contact tracing, where if two people were infected from the same event, then everyone at the event is tested and will identify 100% of the infections at that event. This is marked by SECONDARY_TRACE_THRESHOLD as 2. All that is needed are two confirmed cases from the same event. Here the sampling frame is already those infected, and traced. We had to reduce even smaller because we are restricting to those tested. This means the sampling frame is now restricted to the 100 people infected. 
+
+The distributions of the data are binomial thanks to the True/False spliting of the data. 
+
+
+**Does the file reproduce the same graphs from the article by Whitby?**
+No, the script does not reproduce the graphs from the Whitby article. 
+This difference in graphs was expected because of the sampling procedures. Since the commands used are inherently random, the data output we get will lead to different graphs. Although the messaging may be the same, we do see differences in the graphs. 
+
+
+**Comment on the reproducibility of the results.**
+When changing the simulation event to 1000 times and re-running multiple times, the graphs were not identical.  
+THe graphs did come out quite similar, in which the proportion of cases varied around 0.20 with changing frequency values. The bars representing infections from weddings and traced to weddings follow similar distribution patterns.  
+Again, this is expected, because we have the sampling codes input into the scripts we are running. This will change the makeup of the data every time, and thus change the visualization everytime the script is run. 
+
+
+**Describe the changes you made to the code and how they affected the reproducibility of the script file**
+To ensure the data is reproducible, I added np.random.seed(42) into the function. This ensures the random functions, which we use for sampling, generate the same samples and thus distributions of data.   
+This will ensure, regardless of who or when the code is executed, the same data is generated over and over again. This allows us to reproduce the code for the purposes of comparison and reproducibility.
 ```
 
 
