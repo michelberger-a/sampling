@@ -29,7 +29,7 @@ Describe your target population, sampling frame, sampling units, and observation
 Target Population: All Canadian citizens  
 Sampling Frame: All Canadian citizens, 18 years and older, and voting eligible
 Sampling Units: Strata which would be divided up by province, gender/sex, ethnicity/race, age cohort of 10 years, income cohorts
-Observational Units: Eligible Canadian voters
+Observational Units: The sampled eligible Canadian voters stratified by province, gender/sex, ethnicity/race, age cohort of 10 years, and income cohorts
 
 The sampling strategy I would implement is a stratified sample. Given we are working at the federal level of politics, we likely have access to lots ofdemographic data on potential votes.  
 It would be important to consider many strata because of the diverse Canadian population and vast size, which may affect needs based on voter location.  
