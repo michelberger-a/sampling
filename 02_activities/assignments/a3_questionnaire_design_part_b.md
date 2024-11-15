@@ -4,7 +4,8 @@
 1. Comment on the quality of your sample. Do you expect it to be representative of your target population? Why or why not?
 
     ```
-    write your answer here...
+    I think my sample in Part A will be representative of the target population (All Canadian citizens). The sample includes multiple characteristics which serve as strata, province, gender/sex, ethnicity/race, age cohort, and income. It touches on the many aspects which largely affect an individuals' political choices. It should also allow us to capture a diverse population of Canadians and contrast political likeness between the many characteristics.
+    Although I do think this is a reprsentative sample, there is still room for improvement. I think some additional strata can include additional strata such as employment status, health status, rural/urban living and education level are additional variables to be stratified by. I also think it could be difficult to generate sampling units based on all these strata. These strata will require lots of money, time and resources which could become an issue if there are no respondents. 
     ```
 
 2. Given the class content (error, survey quality, ethics) covered since Part A of the assignment, do you wish to make any changes to your original survey? If so, make a copy of your original survey and make any desired changes. Describe the changes and your reasoning. Provide a link here for submission.
